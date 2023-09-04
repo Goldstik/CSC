@@ -3,7 +3,7 @@ const app = express();
 const port = 3000; // You can choose any available port
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
-const swaggerDocument = YAML.load('./swagger.yaml'); // Load your local Swagger YAML file
+const swaggerDocument = YAML.load('swagger.yaml'); // Load your local Swagger YAML file
 
 app.use(express.json());
 
