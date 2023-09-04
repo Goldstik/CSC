@@ -1,0 +1,18 @@
+<!-- Include Swagger UI CSS and JavaScript from CDN -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.6/swagger-ui.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.6/swagger-ui-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.6/swagger-ui-standalone-preset.min.js"></script>
+
+<div id="swagger-ui"></div>
+<script>
+  const ui = SwaggerUIBundle({
+    url: "swagger.yaml", // Replace with the actual path to your swagger.yaml file
+    dom_id: "#swagger-ui",
+    presets: [SwaggerUIBundle.presets.apis],
+    layout: "BaseLayout",
+  });
+</script>
